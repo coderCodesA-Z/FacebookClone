@@ -10,12 +10,13 @@ html {
 }
 
 body {
+    width: 100%;
     font-family: 'Questrial', sans-serif;
 }
 
 .center-y {
-    display: flex;
-    align-items: center;
+    display: flex ;
+    align-items: center ;
 }
 
 .center-x {
@@ -35,6 +36,7 @@ body {
 
 /* header-style */
 header {
+    width: 100vw ;
     height: 66px;
     display: flex;
     justify-content: space-between;
@@ -77,6 +79,10 @@ header {
     font-size: 20px;
 }
 
+.search-area .search-menu__toggler {
+    display: none;
+}
+
 .search-area .search input {
     border: none;
     background-color: unset;
@@ -102,7 +108,7 @@ header {
 
 nav ul li {
     list-style: none;
-    margin: 0 2px;
+    margin: 0 4px;
 }
 
 nav ul li a {
@@ -111,6 +117,10 @@ nav ul li a {
     padding: 12px 40px;
     transition: .2s;
     position: relative;
+}
+
+nav ul li:last-child {
+    display: none;
 }
 
 nav ul li a:hover {
@@ -214,8 +224,6 @@ nav ul li:first-child span {
     display: block;
 }
 
-
-
 .profile ul li:hover a i {
     color: rgba(255, 255, 255, 0.8);
 }
@@ -231,4 +239,8 @@ nav ul li:first-child span {
 
 .profile ul li:hover a:first-child img {
     filter: brightness(1.25);
+}
+
+.profile ul li:nth-child(3) {
+    display: none;
 }

@@ -32,6 +32,10 @@
     nav ul li:last-child {
         display: block;
     }
+
+    .left-side {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -49,6 +53,9 @@
         justify-content: center;
         margin: 10px;
         color: rgba(255, 255, 255, 0.6);
+    }
+    .right-side {
+        display: none;
     }
 }
 

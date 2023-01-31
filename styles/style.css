@@ -12,6 +12,7 @@ html {
 body {
     width: 100vw;
     font-family: 'Questrial', sans-serif;
+    background-color: rgb(231 232 232);
 }
 
 /* width */
@@ -183,8 +184,15 @@ nav ul li a::after {
     font-weight: 600;
 }
 
-nav ul li a:hover:after {
+nav ul li a:hover::after {
     display: block;
+}
+
+nav ul li:first-child a:hover::after {
+    position: absolute;
+    bottom: -47.5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav ul li span {
@@ -197,6 +205,11 @@ nav ul li:first-child {
     border-top-right-radius: 8px;
     background-color: rgb(64 94 157 / 70%);
     border-bottom: 5px solid rgb(90 119 183 / 95%);
+}
+
+nav ul li:first-child:hover {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
 }
 
 nav ul li:first-child a {

@@ -235,6 +235,7 @@ nav ul li:first-child span {
     text-align: center;
     background-color: rgb(64 94 157 / 70%);
     transition: .2s;
+    cursor: pointer;
 }
 
 .profile ul li a .material-symbols-outlined {
@@ -449,4 +450,17 @@ main>* {
     background-color: rgb(247, 247, 247);
     height: 100vh;
     flex-grow: 2;
+}
+
+.story-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story {
+    height : 250px;
+    width : 18%;
+    background-color: #f0f;
+    border-radius: 10px;
 }

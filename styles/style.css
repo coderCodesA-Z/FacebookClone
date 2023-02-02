@@ -1198,6 +1198,11 @@ main>* {
     transition: .2s;
 }
 
+.right-side ul.right-menu li:hover {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
 .right-side ul.right-menu li a img {
     width: 30px;
     height: 30px;
